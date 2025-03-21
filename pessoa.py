@@ -1,7 +1,8 @@
-class pessoa:
+class Pessoa: 
     def __init__(self, nome, sobrenome):
         self.nome = nome
         self.sobrenome = sobrenome
 
-    def _str_(self):
-        return f"{self.nome}{self.sobrenome}"
+    def __str__(self):  
+        return f"{self.nome} {self.sobrenome}"
+
